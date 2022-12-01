@@ -1,9 +1,9 @@
 // Mono-space font required
 {
 "quota": {
-	"scout": 1,  // max scout units out of raiders
-	"raid": [7.0, 42.0],  // [<min>, <avg>] power of raider squad
-	"attack": 20.0,  // min power of attack group
+	"scout": 10,  // max scout units out of raiders
+	"raid": [15.0, 90.0],  // [<min>, <avg>] power of raider squad
+	"attack": 200.0,  // min power of attack group
 	"thr_mod": {
 		"attack": [0.45, 0.45],  // [<min>, <max>] enemy threat modifier for target selection of attack task
 		"defence": [0.80, 0.80],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task
@@ -13,7 +13,7 @@
 	},
 	"aa_threat": 80.0,  // anti-air threat threshold, air factories will stop production when AA threat exceeds
 	"slack_mod": {
-		"all": 0.5,  // threat map 64-elmos slack multiplier for all units
+		"all": 1,  // threat map 64-elmos slack multiplier for all units
 		"static": 1.5,  // additional 64-elmo-cells for static units
 		"speed": [0.75, 4.0]  // [<64elmo_cells_speed_mod>, <max_64elmo_cells>]
 	}
@@ -23,12 +23,12 @@
 "retreat": {
 	"builder": [0.70, 1.0],  // [<default>, <UnitDef modifier>] for all builders
 	"fighter": [0.45, 1.0],  // [<default>, <UnitDef modifier>] for all not-builder units
-	"shield": [0.25, 0.275]  // [<empty>, <full>] shield power
+	"shield":  [0.25,  1.0]  // [<empty>, <full>] shield power
 },
 
 "defence": {
 	"infl_rad": 7,  // influenece cell radius for defendAlly map
-	"base_rad": [1000.0, 2000.0],  // defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000) radius
+	"base_rad": [500.0, 3000.0],  // defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000) radius
 	"comm_rad": [1000.0, 500.0]  // 0 distance from base ~ 1000, base_rad ~ 500.0
 },
 
@@ -84,7 +84,7 @@
 		"role": ["raider", "scout"],
 		"attribute": ["scout"],
 		"retreat": 0.1,
-		"pwr_mod": 0.9,
+		"pwr_mod": 0.66,
 		"thr_mod": 0.75
 	},
 	"cloakheavyraid": {
