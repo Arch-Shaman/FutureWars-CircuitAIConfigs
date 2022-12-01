@@ -16,7 +16,7 @@
 local infos = {
 	{
 		key    = 'shortName',
-		value  = 'FWBesiegerCircuit1051344', -- AI name - !This comment is used for parsing!
+		value  = '105FutureWarsBesieger1', -- AI name - !This comment is used for parsing!
 		desc   = 'machine conform name.',
 	},
 	{
