@@ -16,7 +16,7 @@
 local infos = {
 	{
 		key    = 'shortName',
-		value  = '1051344CircuitAIBrutal64', -- AI name - !This comment is used for parsing!
+		value  = 'FWBesiegerCircuit1051344', -- AI name - !This comment is used for parsing!
 		desc   = 'machine conform name.',
 	},
 	{
@@ -30,7 +30,7 @@ local infos = {
 	},
 	{
 		key    = 'description',
-		value  = 'This AI is using the new C++ wrapper.',
+		value  = 'A circuit AI that focuses more on siege units and artillery.',
 		desc   = 'tooltip.',
 	},
 	{
