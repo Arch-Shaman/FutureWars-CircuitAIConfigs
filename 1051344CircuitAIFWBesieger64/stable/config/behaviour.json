@@ -2,8 +2,8 @@
 {
 "quota": {
 	"scout": 1,  // max scout units out of raiders
-	"raid": [7.0, 42.0],  // [<min>, <avg>] power of raider squad
-	"attack": 20.0,  // min power of attack group
+	"raid": [3.0, 42.0],  // [<min>, <avg>] power of raider squad
+	"attack": 15.0,  // min power of attack group
 	"thr_mod": {
 		"attack": [0.45, 0.45],  // [<min>, <max>] enemy threat modifier for target selection of attack task
 		"defence": [0.80, 0.80],  // [<min>, <max>] enemy threat modifier for group size calculation of defence task
@@ -11,9 +11,9 @@
 		"static": 4.25,  // initial modifier for power of attack group based on static enemy threat
 		"comm": 0.75
 	},
-	"aa_threat": 80.0,  // anti-air threat threshold, air factories will stop production when AA threat exceeds
+	"aa_threat": 190.0,  // anti-air threat threshold, air factories will stop production when AA threat exceeds
 	"slack_mod": {
-		"all": 0.5,  // threat map 64-elmos slack multiplier for all units
+		"all": 1.0,  // threat map 64-elmos slack multiplier for all units
 		"static": 1.5,  // additional 64-elmo-cells for static units
 		"speed": [0.75, 4.0]  // [<64elmo_cells_speed_mod>, <max_64elmo_cells>]
 	}
@@ -82,9 +82,9 @@
 	},
 	"cloakraid": {
 		"role": ["raider", "scout"],
-		"attribute": ["scout"],
+		"attribute": ["scout", "raider"],
 		"retreat": 0.1,
-		"pwr_mod": 0.9,
+		"pwr_mod": 1.0,
 		"thr_mod": 0.75
 	},
 	"cloakheavyraid": {
@@ -102,9 +102,9 @@
 		"retreat": 0.7  // Cloaked Units autoregen, so let's try to trick circuit into interesting stuff
 	},
 	"cloakriot": {
-		"role": ["riot", "riot"], // Why did this have anti_sub tag?
-		"attribute": ["melee", "ret_fight"],
-		"since": 180,
+		"role": ["riot"], // Why did this have anti_sub tag?
+		"attribute": ["melee", "ret_hold"],
+		"since": 90,
 		"retreat": 0.75,
 		"pwr_mod": 1.4,
 		"thr_mod": 2.3
@@ -119,7 +119,6 @@
 	"cloakarty": {
 		"role": ["artillery"],
 		"attribute": ["siege", "ret_hold"],
-		"limit": 8,
 		"retreat": 0.9,
 		"thr_mod": 0.0
 	},
@@ -334,9 +333,9 @@
 		"retreat": 1.3
 	},
 	"shieldscout": {
-		"role": ["transport", "raider"],
+		"role": ["scout", "raider"],
 		"limit": 20,
-		"attribute": ["siege", "melee"],
+		"attribute": ["siege", "melee", "raider"],
 		"pwr_mod": 0.11,
 		"thr_mod": 0.1,
 		"retreat": 0.0
@@ -350,18 +349,14 @@
 	},
 	"shieldskirm": {
 		"role": ["skirmish"],
-		"limit": 15,
-		"since": 200,
 		"pwr_mod": 0.7,
 		"thr_mod": 0.66,
 		"retreat": 0.3
 	},
 	"shieldassault": {
 		"role": ["assault", "support", "shieldball"],
-		"attribute": ["melee"],
-		"limit": 20,
-		"retreat": 0.3,
-		"since": 120,
+		"attribute": ["support", "skirmish"],
+		"retreat": 0.6,
 		"pwr_mod": 0.7,
 		"thr_mod": 0.35
 	},
@@ -369,7 +364,6 @@
 		"role": ["riot", "shieldball"],
 		"fire_state": "hold",
 		"since": 100,
-		"limit": 5,
 		"retreat": 0.3,
 		"pwr_mod": 1.7,
 		"thr_mod": 1.7
@@ -383,6 +377,7 @@
 	},
 	"shieldarty": {
 		"role": ["disarm_target"],
+		"attribute": ["support", "siege"],
 		"since": 300,
 		"retreat": 0.3,
 		"pwr_mod": 1.5,
@@ -392,7 +387,7 @@
 		"role": ["mine"]
 	},
 	"shieldshield": {
-		"role": ["super", "heavy", "shieldball"],
+		"role": ["shieldball", "heavy", "shieldball"],
 		"since": 540,
 		"attribute": ["support"],
 		"retreat": 0.36,
