@@ -110,7 +110,7 @@
 		"staticmex": {
 //			"terra": true,
 			"energy": [20, "mex"],
-			"porc": true
+			"porc": false
 		}
 	},
 	"big_gun": {
