@@ -16,7 +16,7 @@
 local infos = {
 	{
 		key    = 'shortName',
-		value  = '105FutureWarsBesieger1', -- AI name - !This comment is used for parsing!
+		value  = '1051344CircuitAIBrutal64', -- AI name - !This comment is used for parsing!
 		desc   = 'machine conform name.',
 	},
 	{
@@ -25,12 +25,12 @@ local infos = {
 	},
 	{
 		key    = 'name',
-		value  = 'CircuitFW: Besieger',
+		value  = 'Future Wars: Besieger (v1.0)',
 		desc   = 'human readable name.',
 	},
 	{
 		key    = 'description',
-		value  = 'A circuit AI that focuses more on siege units and artillery.',
+		value  = 'This AI is using the new C++ wrapper.',
 		desc   = 'tooltip.',
 	},
 	{
