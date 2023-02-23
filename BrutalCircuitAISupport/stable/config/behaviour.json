@@ -933,7 +933,7 @@
 		"thr_mod": 1.5
 	},
 	"turretmissile": {
-		"role": ["missileskirm", "riot", "builder"],
+		"role": ["missileskirm"],
 		"thr_mod": 0.34
 	},
 	"turretriot": {
@@ -955,7 +955,7 @@
 		"thr_mod": 1.0
 	},
 	"turretgauss": {
-		"role": ["static", "turtle", "transport"],
+		"role": ["static", "turtle"],
 		"attribute": ["siege", "ret_hold"],
 		"retreat": 0.4,  // FIXME: Bunker up turret when it's on low health, doesn't work for statics atm
 		"thr_mod": 1.6
