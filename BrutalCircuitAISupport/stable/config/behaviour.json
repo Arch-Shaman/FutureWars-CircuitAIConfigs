@@ -976,7 +976,7 @@
 	},
 	"striderhub": {
 		"role": ["static"],
-		"since": 900,
+		"since": 300,
 		"attribute": ["support"]
 	},
 
