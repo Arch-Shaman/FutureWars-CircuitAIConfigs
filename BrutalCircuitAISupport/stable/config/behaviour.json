@@ -200,8 +200,8 @@
 	},
 	"gunshipassault": {
 		"role": ["anti_heavy", "air"],
-		"limit": 3,
-		"since": 330,
+		"limit": 60,
+		"since": 150,
 		"retreat": 0.5,
 		"pwr_mod": 1.65,
 		"thr_mod": 1.00
