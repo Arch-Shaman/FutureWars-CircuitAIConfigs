@@ -29,20 +29,20 @@
 		"require_energy": true,
 
 		// If income*ecoFactor < income_tier[N] then 'tierN' probability will be used
-		"income_tier": [20, 30, 40],
+		"income_tier": [20, 35, 60],
 
-		//             conjurer,   glaive,      scythe,           rocko,        warrior,     zeus,           hammer,      sniper,       tick,        eraser,        gremlin
+		//             Mirage,      Lurker,      Assassin,         Waylayer,    Assailant,      Snare,         Sparky,      Sniper,       Imp,        eraser,       gremlin
 		"unit":      ["cloakcon", "cloakraid", "cloakheavyraid", "cloakskirm", "cloakriot", "cloakassault", "cloakarty", "cloaksnipe", "cloakbomb", "cloakjammer", "cloakaa"],
 
 		"land": {
-			// 0-8m Opening - Glaives & Warriors most important for scouting, map control and defence.
-			"tier0": [ 0.10,       0.54,        0.03,             0.30,         0.03,        0.00,           0.00,        0.00,         0.00,        0.00,          0.00],
+			// 0-20m Opening - Mirages build, lurkers raid, throw in some waylayers too.
+			"tier0": [ 0.25,       0.50,        0.00,             0.15,         0.10,        0.00,           0.00,        0.00,         0.00,        0.00,          0.00],
 
-			// 9-16m Early Game - Map control still important but move towards Scythe raiding and Riot defense from raider balls.
-			"tier1": [ 0.20,       0.10,        0.06,             0.51,         0.10,        0.00,           0.00,        0.03,         0.00,        0.00,          0.00],
+			// 20-35m Mid Game - Less lurkers, more support units.
+			"tier1": [ 0.10,       0.00,        0.00,             0.20,         0.15,        0.20,           0.25,        0.10,         0.00,        0.00,          0.00],
 
-			// 17-24m Expanding - Good size terriotiry now, so less scouting and begin producing a little assault/arty on the side.
-			"tier2": [ 0.25,       0.01,        0.20,             0.20,         0.03,        0.00,           0.00,        0.20,         0.00,        0.11,          0.00]
+			// 40-60m Expanding - Start spamming artillery, we probably have other factories to cover us.
+			"tier2": [ 0.05,       0.00,        0.20,             0.00,         0.00,        0.15,           0.10,        0.50,         0.00,        0.00,          0.00]
 
 			// 25-32m Expansions meet - Economy can afford to begin producing in bulk so unit compositions alter.
 	//		"tier3": [ 0.10,       0.40,        0.05,             0.30,         0.00,        0.10,           0.00,        0.00,         0.00,        0.05,          0.00],
