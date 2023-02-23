@@ -183,11 +183,12 @@
 		"thr_mod": 0.85
 	},
 	"gunshipraid": {
-		"role": ["scout", "air"],
+		"role": ["raider", "air"],
 		"retreat": 0.7,
-		"limit": 1,
-		"pwr_mod": 1.25,
-		"thr_mod": 1.1
+		"since": 150,
+		"limit": 30,
+		"pwr_mod": 0.65,
+		"thr_mod": 1.0
 	},
 	"gunshipheavyskirm": {
 		"role": ["assault", "air"],
