@@ -191,10 +191,10 @@
 		"thr_mod": 1.0
 	},
 	"gunshipheavyskirm": {
-		"role": ["assault", "air"],
+		"role": ["skirmish", "air"],
 		"since": 330,
 		"attribute": ["no_strafe"],
-		"retreat": 0.65,
+		"retreat": 0.85,
 		"pwr_mod": 1.00,
 		"thr_mod": 1.00
 	},
