@@ -76,28 +76,28 @@
 		"importance": [15.0, 1.7],
 		"require_energy": false,
 
-		"income_tier": [16, 24, 32, 40, 56, 72, 85],
-		//             wasp,         blastwing,     gnat,         banshee,       rapier,         brawler,             blackdawn,        krow,          valkyrie,       vindicator,          trident
+		"income_tier": [15, 25, 40, 60, 80, 100, 150],
+		//             wasp,         Seeker,          gnat,         banshee,       rapier,         brawler,             blackdawn,        krow,          valkyrie,       vindicator,          trident
 		"unit":      ["gunshipcon", "gunshipbomb", "gunshipemp", "gunshipraid", "gunshipskirm", "gunshipheavyskirm", "gunshipassault", "gunshipkrow", "gunshiptrans", "gunshipheavytrans", "gunshipaa"],
 		"land": {
-			// 0-8m Opening - Blastwing and banshee Harass
-			"tier0": [ 0.00,         0.00,          0.00,         0.00,          0.98,           0.00,                0.02,             0.00,          0.00,           0.00,                0.00],
-			// 9-16m Early Game - Banshee with a chance of Blackdawn
-			"tier1": [ 0.00,         0.20,          0.00,         0.02,          0.45,           0.31,                0.02,             0.00,          0.00,           0.00,                0.00],
-			// 17-24m Expanding - Time to start a-makin Brawlers
-			"tier2": [ 0.00,         0.02,          0.00,         0.00,          0.04,           0.90,                0.04,             0.00,          0.00,           0.00,                0.00],
-			// 25-32m Expansions meet - Time to keep a-makin Brawlers
-			"tier3": [ 0.00,         0.05,          0.00,         0.00,          0.04,           0.83,                0.08,             0.00,          0.00,           0.00,                0.00],
-			// 33m -40m Solid Fronts - Brawlers with a chance of Krow
-			"tier4": [ 0.00,         0.04,          0.00,         0.00,          0.05,           0.80,                0.10,             0.01,          0.00,           0.00,                0.00],
-			// 41m - 56m Mid Game - Brawlers with a bigger chance of Krow
-			"tier5": [ 0.00,         0.05,          0.00,         0.00,          0.00,           0.87,                0.06,             0.02,          0.00,           0.00,                0.00],
-			// 57m - 72m Late Game - we must have 2 facs & Striders by now, go nuts!
-			"tier6": [ 0.00,         0.05,          0.00,         0.00,          0.00,           0.84,                0.07,             0.04,          0.00,           0.00,                0.00],
-			// 72m - inf+ Late late Game - Spam Krows!
-			"tier7": [ 0.00,         0.05,          0.00,         0.00,          0.00,           0.90,                0.00,             0.05,          0.00,           0.00,                0.00]
+			// 0-15m Opening - Spam Seeker!
+			"tier0": [ 0.20,         0.70,          0.00,         0.10,          0.00,           0.00,                0.00,             0.00,          0.00,           0.00,                0.00],
+			// 16-25m Early Game - Whirl seeker.
+			"tier1": [ 0.00,         0.40,          0.00,         0.30,          0.10,           0.05,                0.1,             0.00,          0.00,           0.00,                0.00],
+			// 26-40 Expanding - Transition into even scarier stuff.
+			"tier2": [ 0.00,         0.00,          0.00,         0.00,          0.20,           0.50,                0.25,             0.05,          0.00,           0.00,                 0.00],
+			// 41-60m Expansions meet - Start the Purifiers.
+			"tier3": [ 0.00,         0.00,          0.00,         0.00,          0.15,           0.25,                0.50,             0.10,          0.00,           0.00,                0.00],
+			// 61m -80m Solid Fronts - More Chance of Purifier.
+			"tier4": [ 0.00,         0.00,          0.00,         0.00,          0.10,           0.35,                0.35,             0.20,          0.00,           0.00,                0.00],
+			// 81m - 100m Mid Game - Just spam purifier and hope for the best.
+			"tier5": [ 0.00,         0.00,          0.00,         0.00,          0.00,           0.00,                0.70,             0.30,          0.00,           0.00,                0.00],
+			// 101m - 900m Late Game - we must have 2 facs & Striders by now, go nuts!
+			"tier6": [ 0.00,         0.00,          0.00,         0.00,          0.00,           0.00,                0.30,             0.70,          0.00,           0.00,                0.00],
+			// 150m - inf+ Late late Game - Spam Krows!
+			"tier7": [ 0.00,         0.00,          0.00,         0.00,          0.00,           0.00,                0.20,             0.80,          0.00,           0.00,                0.00]
 		},
-		"caretaker": 6
+		"caretaker": 15
 	},
 
 	"factoryamph": {
