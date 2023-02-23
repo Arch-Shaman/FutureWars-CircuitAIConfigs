@@ -176,11 +176,11 @@
 		"retreat": 0.9
 	},
 	"gunshipskirm": {
-		"role": ["air", "bullshit_raider"],
-		"retreat": 0.65,
+		"role": ["air", "skirmish"],
+		"retreat": 0.75,
 		"pwr_mod": 0.7,
-		"limit": 8,
-		"thr_mod": 0.66
+		"limit": 30,
+		"thr_mod": 0.85
 	},
 	"gunshipraid": {
 		"role": ["scout", "air"],
