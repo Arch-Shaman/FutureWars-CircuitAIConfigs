@@ -73,7 +73,7 @@
 	},
 
 	"factorygunship": {
-		"importance": [15.0, 1.7],
+		"importance": [2.0, 1.7],
 		"require_energy": false,
 
 		"income_tier": [15, 25, 40, 60, 80, 100, 150],
