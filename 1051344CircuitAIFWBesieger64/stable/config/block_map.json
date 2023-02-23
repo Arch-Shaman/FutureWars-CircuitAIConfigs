@@ -56,7 +56,7 @@
 		},
 		"singu": {
 			"type": ["circle", "engy_high"],
-			"radius": "expl_ally",  // [radius ~ 1 player .. radius/2 ~ 4+ players]
+			"radius": "explosion",  // [radius ~ 1 player .. radius/2 ~ 4+ players]
 			"ignore": ["mex", "engy_low", "def_low", "pylon", "nano"]
 		},
 		"pylon": {
