@@ -226,7 +226,7 @@
 	},
 	"gunshipaa": {
 		"role": ["anti_air", "air"],
-		"limit": 6,
+		"limit": 15,
 		"retreat": 0.95,
 		"pwr_mod": 3.0,
 		"thr_mod": 1.2
@@ -278,9 +278,9 @@
 	},
 	"amphaa": {
 		"role": ["anti_air"],
-		"attribute": ["melee", "ret_fight", "support"],
+		"attribute": ["ret_fight", "support"],
 		"retreat": 0.3,
-		"limit": 5,
+		"limit": 10,
 		"pwr_mod": 3.0,
 		"thr_mod": 1.5
 	},
@@ -420,7 +420,7 @@
 	},
 	"shieldaa": {
 		"role": ["anti_air"],
-		"attribute": ["melee", "ret_fight"],
+		"attribute": ["ret_fight"],
 		"retreat": 0.7,
 		"pwr_mod": 3.0,
 		"thr_mod": 1.2
@@ -492,7 +492,6 @@
 	},
 	"vehaa": {
 		"role": ["anti_air"],
-		"attribute": ["melee"],
 		"retreat": 0.75,
 		"pwr_mod": 3.0,
 		"thr_mod": 1.2
@@ -558,7 +557,6 @@
 	},
 	"jumpaa": {
 		"role": ["anti_air"],
-		"attribute": ["melee"],
 		"retreat": 0.8,
 		"pwr_mod": 3.0,
 		"thr_mod": 1.2
@@ -922,13 +920,13 @@
 	"turretaalaser": {
 		"role": ["anti_air"],
 		"attribute": ["siege", "ret_hold"],
-		"retreat": 0.4,  // FIXME: Bunker up turret when it's on low health, doesn't work for statics atm
+		"retreat": 0.4,  // FIXME: Bunker up turret when it's on low health, doesn't work for statics atm -- NOTE: FW Does this already
 		"thr_mod": 1.0
 	},
 	"turretaaheavy": {
 		"role": ["anti_air", "heavy", "turtle"],
-		"limit": 1,
-		"thr_mod": 1.0
+		"limit": 3,
+		"thr_mod": 3.0
 	},
 	"turretlaser": {
 		"role": ["static", "riot", "builder"],
