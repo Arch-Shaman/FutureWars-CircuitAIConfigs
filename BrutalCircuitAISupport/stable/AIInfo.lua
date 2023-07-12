@@ -14,7 +14,7 @@
 --------------------------------------------------------------------------------
 
 local infos = {
-	{
+		{
 		key    = 'shortName',
 		value  = 'BrutalCircuitAISupport', -- AI name - !This comment is used for parsing!
 		desc   = 'machine conform name.',
@@ -25,7 +25,7 @@ local infos = {
 	},
 	{
 		key    = 'name',
-		value  = 'Brutal AI - Support',
+		value  = 'Future Wars: Besieger (v1.0)',
 		desc   = 'human readable name.',
 	},
 	{
@@ -40,7 +40,7 @@ local infos = {
 	},
 	{
 		key    = 'loadSupported',
-		value  = 'yes',
+		value  = 'no',
 		desc   = 'whether this AI supports loading or not',
 	},
 	{
