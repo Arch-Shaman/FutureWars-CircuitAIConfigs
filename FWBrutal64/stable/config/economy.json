@@ -16,22 +16,24 @@
 		"land": {
 			// "<energy_def>": [<lower limit>, <upper limit>]
 			// limit = random(<lower limit>..<upper limit>)
-			"energysingu": [6],
-			"energygeo": [0, 2],
+			"energyprosperity": [2],
+			"energygeo": [1, 2],
+			"energysingu": [10],
 			"energyfusion": [6, 10],
 			"energywind": [8, 12],
-			"energysolar": [40]
+			"energysolar": [10],
+			"staticenergyrtg": [2, 2]
 		},
 		"water": {
 			"energysingu": [1],
-			"energygeo": [0],
+			"energygeo": [1, 2],
 			"energyfusion": [4],
 			"energywind": [20],
 			"energysolar": [8, 12]
 		},
 		// income factor for energy, time is in seconds
 		// [[<start_factor>, <start_time>], [<end_factor>, <end_time>]]
-		"factor": [[0.15, 1], [7.0, 3600]],
+		"factor": [[0.15, 1], [10.0, 2400]],
 
 		"pylon": ["energypylon", "energysolar", "energywind"]
 	},
@@ -56,7 +58,7 @@
 
 	// New factory switch interval, in seconds (each new factory resets timer, switch event is also based on eco + caretakers)
 	// switch = random(<min_interval>..<max_interval>)
-	"switch": [800, 900],
+	"switch": [240, 600],
 
 	"terra": "terraunit",
 	"airpad": "staticrearm",

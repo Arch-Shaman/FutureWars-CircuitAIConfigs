@@ -52,12 +52,13 @@
 		},
 		"fusion": {
 			"type": ["circle", "engy_mid"],
+			"radius": "explosion", 
 			"ignore": ["mex", "pylon", "def_low"]
 		},
-		"singu": {
+		"rtg": {
 			"type": ["circle", "engy_high"],
-			"radius": "expl_ally",  // [radius ~ 1 player .. radius/2 ~ 4+ players]
-			"ignore": ["mex", "engy_low", "def_low", "pylon", "nano"]
+			"radius": "explosion",
+			"ignore": ["mex", "engy_mid", "engy_high", "factory", "pylon", "nano"]
 		},
 		"pylon": {
 			"type": ["circle", "pylon"],
@@ -123,7 +124,7 @@
 		"solar": ["energysolar"],
 		"wind": ["energywind"],
 		"fusion": ["energyfusion"],
-		"singu": ["energysingu"],
+		"rtg": ["staticenergyrtg"],
 		"pylon": ["energypylon"],
 		"store": ["staticstorage"],
 		"mex": ["staticmex"],
