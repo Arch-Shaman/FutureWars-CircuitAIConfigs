@@ -177,27 +177,28 @@
 	},
 	"gunshipskirm": {
 		"role": ["skirmish", "air", "artillery"],
-		"retreat": 0.65,
+		"retreat": 0.75,
 		"pwr_mod": 0.7,
 		"thr_mod": 0.66
 	},
 	"gunshipraid": {
 		"role": ["raider", "air"],
 		"attribute": ["boost"],
-		"retreat": 0.4,
+		"retreat": 0.55,
 		"pwr_mod": 1.25,
 		"thr_mod": 1.2
 	},
 	"gunshipheavyskirm": {
 		"role": ["artillery", "air"],
-		"attribute": ["no_strafe"],
-		"retreat": 0.65,
+		"attribute": ["no_strafe", "siege"],
+		"retreat": 0.75,
 		"pwr_mod": 1.00,
 		"thr_mod": 1.00
 	},
 	"gunshipassault": {
 		"role": ["anti_heavy", "air"],
-		"retreat": 0.5,
+		"attribute": ["no_strafe"],
+		"retreat": 0.6,
 		"pwr_mod": 2.0,
 		"thr_mod": 2.00
 	},
@@ -216,6 +217,7 @@
 		"role": ["super", "air", "shieldball"],
 		"attribute": ["support"],
 		"limit": 10,
+		"retreat": 0.95,
 		"thr_mod": 0.2
 	},
 	"gunshipaa": {
