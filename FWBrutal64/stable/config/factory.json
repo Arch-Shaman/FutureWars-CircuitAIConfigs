@@ -343,7 +343,7 @@
 	},
 
 	"factoryship": {
-		"importance": [5.5, 5.5],
+		"importance": [5.5, 2.5],
 		"require_energy": false,
 
 		"income_tier": [30],
@@ -358,21 +358,23 @@
 	},
 
 	"striderhub": {
-		"importance": [0, 1.5],
+		"importance": [0, 4.5],
 		"require_energy": false,
 
-		"income_tier": [60, 80, 100],
-		//             ultimatum,          scorpion,          dante,          catapult,      funnelweb,          bantha,          detriment,          scylla,          reef,          battleship
-		"unit":      ["striderantiheavy", "striderscorpion", "striderdante", "striderarty", "striderfunnelweb", "striderbantha", "striderdetriment", "subtacmissile", "shipcarrier", "shipheavyarty"],
+		"income_tier": [50, 80, 100, 150],
+		//             ultimatum,          scorpion,          dante,          catapult,      funnelweb,          bantha,          detriment,          scylla,          forsaken,           nebula
+		"unit":      ["striderantiheavy", "striderscorpion", "striderdante", "striderarty", "striderfunnelweb", "striderbantha", "striderdetriment", "subtacmissile", "striderrazorback", "nebula"],
 		"land": {
-			"tier0": [ 0.01,               0.10,              0.81,           0.00,          0.05,               0.03,            0.00,               0.00,            0.00,          0.00],
-			"tier1": [ 0.03,               0.14,              0.22,           0.24,          0.20,               0.16,            0.01,               0.00,            0.00,          0.00],
-			"tier2": [ 0.05,               0.10,              0.16,           0.35,          0.10,               0.21,            0.03,               0.00,            0.00,          0.00],
-			"tier3": [ 0.05,               0.10,              0.01,           0.26,          0.10,               0.35,            0.13,               0.00,            0.00,          0.00]
+			"tier0": [ 0.00,               0.12,              0.25,           0.00,          0.13,               0.00,            0.00,               0.00,            0.50,                0.00],
+			"tier1": [ 0.35,               0.00,              0.00,           0.25,          0.15,               0.05,            0.00,               0.00,            0.15,                0.05],
+			"tier2": [ 0.33,               0.00,              0.00,           0.35,          0.10,               0.15,            0.05,               0.00,            0.00,                0.00],
+			"tier3": [ 0.10,               0.00,              0.00,           0.04,          0.00,               0.20,            0.33,               0.00,            0.00,                0.33]
 		},
 		"water": {
-			"tier1": [ 0.50,               0.00,              0.00,           0.00,          0.00,               0.00,            0.00,               0.00,            0.25,          0.25],
-			"tier2": [ 0.10,               0.00,              0.00,           0.00,          0.00,               0.00,            0.10,               0.00,            0.40,          0.40]
+			"tier1": [ 0.50,               0.00,              0.00,           0.00,          0.00,               0.00,            0.00,               0.40,            0.00,                0.10],
+			"tier2": [ 0.50,               0.00,              0.00,           0.00,          0.00,               0.00,            0.00,               0.30,            0.00,                0.20],
+			"tier2": [ 0.50,               0.00,              0.00,           0.00,          0.10,               0.15,            0.20,               0.00,            0.00,                0.30],
+			"tier3": [ 0.50,               0.00,              0.00,           0.04,          0.00,               0.00,            0.25,               0.00,            0.00,                0.25]
 		},
 
 		"caretaker": 100
