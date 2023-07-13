@@ -20,8 +20,8 @@
 			"energygeo": [1, 2],
 			"energysingu": [10],
 			"energyfusion": [6, 10],
-			"energywind": [8, 12],
 			"energysolar": [10],
+			"energywind": [8, 12],
 			"staticenergyrtg": [2, 2]
 		},
 		"water": {
