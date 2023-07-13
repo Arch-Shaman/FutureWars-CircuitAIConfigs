@@ -197,7 +197,7 @@
 	},
 	"gunshipassault": {
 		"role": ["anti_heavy", "air"],
-		"retreat": 0.4,
+		"retreat": 0.5,
 		"pwr_mod": 2.0,
 		"thr_mod": 2.00
 	},
@@ -430,8 +430,8 @@
 		"role": ["builder", "mine"],
 	},
 	"vehscout": {
-		"role": ["raider", "skirmish"],
-		"attribute": ["scout", "support", "siege"],
+		"role": ["raider", "scout"],
+		"attribute": ["scout", "siege"],
 		"thr_mod": 0.6,
 		"pwr_mod": 1.2,
 		"retreat": 0.9,
@@ -957,8 +957,8 @@
 		"thr_mod": 2.5
 	},
 	"turretsunlance": {
-		"role": ["artillery", "artillery", "snipe_target"],
-		"thr_mod": 1.2
+		"role": ["artillery", "static", "snipe_target"],
+		"thr_mod": 0.1
 	},
 	"staticheavyshield": {
 		"role": ["static", "snipe_target", "shieldball"],

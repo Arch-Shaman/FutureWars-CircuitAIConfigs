@@ -23,7 +23,7 @@
 		//   if factory's builder unavailable in current frame: priority ~= map_percent * importance0 / 10 + random(-20..+20)
 		// During game: priority ~= map_percent * importance1 + random(-20..+20)
 		// importanceN = 1.0 by default if not set
-		"importance": [1.25, 3.2],
+		"importance": [1.45, 3.2],
 
 		// 'require_energy' adds energy requirement for tierN (N>0): fallback to lowest tier on low energy
 		"require_energy": true,
@@ -183,7 +183,7 @@
 	},
 
 	"factoryveh": {
-		"importance": [2.15, 3.2],
+		"importance": [1.85, 3.2],
 		"require_energy": false,
 
 		"income_tier": [16, 30, 40, 60, 80, 90, 100],
@@ -326,7 +326,7 @@
 	},
 
 	"factoryshield": {
-		"importance": [1.25, 2.85],
+		"importance": [1.45, 2.85],
 		"require_energy": true,
 
 		"income_tier": [20, 30, 40, 60],
