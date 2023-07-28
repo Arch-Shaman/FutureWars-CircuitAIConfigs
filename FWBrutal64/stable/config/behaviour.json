@@ -208,7 +208,7 @@
 		"role": ["anti_heavy", "air", "disarm_target"],
 		"attribute": ["melee", "dg_cost"],
 		"retreat": 0.55,
-		"pwr_mod": 0.3,
+		"pwr_mod": 0.7,
 		"thr_mod": 0.3,
 	},
 	"gunshiptrans": {
@@ -644,24 +644,24 @@
 		"thr_mod": 3.0
 	},
 	"bomberprec": {
-		"role": ["riot", "air"],  // FIXME: should act as anti_heavy?
-		"attribute": ["bomber"],
+		"role": ["bomber", "air"],  // FIXME: should act as anti_heavy?
+		"attribute": ["anti_heavy"],
 		"reload": 30.0,
 		"retreat": 0.7,
 		"pwr_mod": 0.10,
 		"thr_mod": 0.01
 	},
 	"bomberriot": {
-		"role": ["riot", "air"],
-		"attribute": ["bomber"],
+		"role": ["bomber", "air"],
+		"attribute": ["riot"],
 		"limit": 7,
 		"retreat": 0.6,
 		"pwr_mod": 0.01,
 		"thr_mod": 0.01
 	},
 	"bomberdisarm": {
-		"role": ["anti_heavy", "air"],
-		"attribute": ["bomber"],
+		"role": ["bomber", "air"],
+		"attribute": ["anti_heavy"],
 		"limit": 7,
 		"since": 120,
 		"retreat": 0.95,
@@ -669,8 +669,8 @@
 		"thr_mod": 0.01
 	},
 	"bomberheavy": {
-		"role": ["anti_heavy", "air"],  // FIXME: should act as anti_heavy?
-		"attribute": ["bomber"],
+		"role": ["bomber", "air"],  // FIXME: should act as anti_heavy?
+		"attribute": ["anti_heavy", "snipe_target"],
 		"fire_state": "hold",
 		"since": 180,
 		"retreat": 0.95,
