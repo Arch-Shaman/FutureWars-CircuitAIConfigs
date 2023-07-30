@@ -6,7 +6,7 @@
 		"unit": {
 			"support": {
 				// Choice importance, 0 by default
-				"importance": 0.25,
+				"importance": 0.33,
 
 				// Starting units (order matters)
 				"start": {
@@ -14,11 +14,11 @@
 						"factorycloak": [
 							// [<weight>, [<role>, <role>, ...]]
 							[0.9, ["builder", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider"]],
-							[0.1, ["raider", "builder", "riot", "builder", "raider", "raider", "raider", "raider", "raider", "raider"]]
+							[0.1, ["builder", "builder", "riot", "builder", "raider", "raider", "raider", "raider", "raider", "raider"]]
 						],
 						"factorygunship": [
-							[0.5, ["builder", "skirmish", "skirmish", "support", "skirmish", "skirmish"]],
-							[0.5, ["scout", "support", "builder","support", "skirmish", "skirmish", "support", "skirmish", "skirmish"]]
+							[0.5, ["builder", "raider", "raider", "raider", "raider", "raider"]],
+							[0.5, ["scout", "scout", "scout","scout", "scout", "scout", "scout", "scout", "builder"]]
 						],
 						"factoryamph": [
 							[0.1, ["builder", "riot", "raider", "raider", "raider", "raider", "raider"]],
@@ -53,7 +53,7 @@
 							[0.5, ["scout", "scout", "scout", "scout", "builder", "raider", "scout", "raider"]]
 						]
 					},
-					"default": ["riot", "raider", "builder"]
+					"default": ["builder", "builder", "raider"]
 				},
 
 				// Morph params
@@ -253,7 +253,7 @@
 				// Commander hides if ("time" elapsed) and ("threat" exceeds value or enemy has "air")
 				"hide": {
 					"time": 30,  // seconds
-					"threat": 20,
+					"threat": 5,
 					"air": true,
 					"task_rad": 2000.0
 				}
