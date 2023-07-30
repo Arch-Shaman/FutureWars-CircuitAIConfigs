@@ -511,13 +511,14 @@
 	},
 	"jumpraid": {
 		"role": ["raider", "anti_sub"],
-		"attribute": ["melee"],
+		"attribute": ["melee", "jump"],
 		"retreat": 0.4,
 		"pwr_mod": 1.5,
 		"thr_mod": 0.9
 	},
 	"jumpblackhole": {
 		"role": ["support"],
+		"attribute": ["siege"],
 		"since": 300,
 		"limit": 6,
 		"retreat": 0.36
@@ -528,7 +529,7 @@
 	},
 	"jumpassault": {
 		"role": ["assault", "anti_sub", "disarm_target"],
-		"attribute": ["melee", "siege", "ret_fight"],
+		"attribute": ["melee", "siege"],
 		"retreat": 0.4,
 		"pwr_mod": 1.3,
 		"thr_mod": 0.5
