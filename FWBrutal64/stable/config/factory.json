@@ -309,20 +309,20 @@
 	},
 
 	"factoryjump": {
-		"importance": [0.73, 1.1],
+		"importance": [2.25, 3.4],
 		"require_energy": false,
 
-		"income_tier": [20, 40, 60, 80],
+		"income_tier": [10, 20, 40, 80],
 		//             freaker,   puppy,       pyro,       placeholder,     moderator,   jack,          sumo,       firewalker, skuttle,    archangel
 		"unit":      ["jumpcon", "jumpscout", "jumpraid", "jumpblackhole", "jumpskirm", "jumpassault", "jumpsumo", "jumparty", "jumpbomb", "jumpaa"],
 		"land": {
-			"tier0": [ 0.05,      0.24,        0.50,       0.00,            0.15,        0.06,          0.00,       0.00,       0.00,       0.00],
-			"tier1": [ 0.10,      0.20,        0.20,       0.10,            0.16,        0.24,          0.00,       0.00,       0.00,       0.00],
-			"tier2": [ 0.20,      0.20,        0.00,       0.15,            0.04,        0.31,          0.00,       0.10,       0.00,       0.00],
-			"tier3": [ 0.25,      0.15,        0.00,       0.15,            0.00,        0.33,          0.00,       0.12,       0.00,       0.00]
+			"tier0": [ 0.15,      0.50,        0.25,       0.05,            0.00,        0.05,          0.00,       0.00,       0.00,       0.00],
+			"tier1": [ 0.10,      0.30,        0.10,       0.10,            0.20,        0.20,          0.00,       0.00,       0.00,       0.00],
+			"tier2": [ 0.05,      0.00,        0.00,       0.15,            0.25,        0.30,          0.10,       0.05,       0.10,       0.00],
+			"tier3": [ 0.00,      0.00,        0.00,       0.00,            0.00,        0.50,          0.20,       0.10,       0.20,       0.00]
 		},
 
-		"caretaker": 6
+		"caretaker": 10
 	},
 
 	"factoryshield": {
