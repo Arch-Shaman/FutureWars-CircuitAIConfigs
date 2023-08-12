@@ -92,7 +92,7 @@
 			]
 		},
 		"energyfusion": {
-//			"pylon": true,
+			"pylon": true,
 			"hub": [[
 					{"unit": "turretheavylaser", "category": "defence", "offset": [80, -80]},
 					{"unit": "turretheavylaser", "category": "defence", "offset": {"front": 120}},
