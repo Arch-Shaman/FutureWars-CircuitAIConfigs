@@ -154,32 +154,28 @@
 	},
 
 	"factoryspider": {
-		"importance": [0.71, 0.7],
+		"importance": [0.90, 1.2],
 		"require_energy": false,
 
-		"income_tier": [16, 24, 32, 40, 56, 72, 100],
+		"income_tier": [16, 30, 50, 70, 90],
 		//             weaver,      flea,          hermit,          venom,       redback,      recluse,       crabe,         infiltrator,       tarantula
 		"unit":      ["spidercon", "spiderscout", "spiderassault", "spideremp", "spiderriot", "spiderskirm", "spidercrabe", "spiderantiheavy", "spideraa"],
 		"land": {
-			// 0-12m Opening - Opening turbo Flea spam & Riots
-			"tier0": [ 0.00,        0.73,          0.00,            0.22,        0.05,         0.00,          0.00,          0.00,              0.00],
-			// 13-18m Early Game - Reducing Flea spam, still mostly Riots
-			"tier1": [ 0.00,        0.59,          0.00,            0.05,        0.05,         0.31,          0.00,          0.00,              0.00],
-			// 17-24m Expanding - Slant production towards Hermit & Redback
-			"tier2": [ 0.06,        0.48,          0.04,            0.05,        0.00,         0.35,          0.02,          0.00,              0.00],
-			// 25-32m Expansions meet - Slant production towards Hermit & Recluse
-			"tier3": [ 0.08,        0.45,          0.06,            0.03,        0.00,         0.33,          0.05,          0.00,              0.00],
-			// 33m -40m Solid Fronts - 	Greater Emphasis on Hermit & Crabbe
-			"tier4": [ 0.08,        0.40,          0.09,            0.03,        0.00,         0.32,          0.08,          0.00,              0.00],
-			// 41m - 56m Mid Game - We need more Crabbes
-			"tier5": [ 0.08,        0.42,          0.07,            0.02,        0.00,         0.31,          0.10,          0.00,              0.00],
-			// 57m - 72m Late Game -  MORE CRABBES
-			"tier6": [ 0.09,        0.40,          0.11,            0.00,        0.00,         0.29,          0.11,          0.00,              0.00],
-			// 72m - inf+ Late late Game - TURBO CRABBES
-			"tier7": [ 0.10,        0.35,          0.20,            0.00,        0.00,         0.22,          0.13,          0.00,              0.00]
+			// 0-16m Opening - Opening: Spam Wolf.
+			"tier0": [ 0.10,        0.80,          0.00,            0.05,        0.00,         0.00,          0.00,          0.00,              0.00],
+			// 16-30m Early Game - Start on Hermits, riots and Twilight
+			"tier1": [ 0.00,        0.00,          0.30,            0.20,        0.10,         0.40,          0.00,          0.00,              0.00],
+			// 30-50m Expanding - Mass Hermits and Crabes!
+			"tier2": [ 0.00,        0.00,          0.50,            0.00,        0.10,         0.25,          0.15,          0.00,              0.00],
+			// 50-70m Expansions meet - More crabs, because crabs are op.
+			"tier3": [ 0.00,        0.00,          0.50,            0.00,        0.10,         0.15,          0.25,          0.00,              0.00],
+			// 70-90m Suddenly spam hermits only, we probably have better heavies.
+			"tier4": [ 0.00,        0.00,          0.90,            0.00,        0.00,         0.00,          0.10,          0.00,              0.00],
+			// 90+m: Pure hermititis.
+			"tier5": [ 0.00,        0.00,          0.90,            0.00,        0.00,         0.00,          0.10,          0.00,              0.00]
 		},
 
-		"caretaker": 6
+		"caretaker": 15
 	},
 
 	"factoryveh": {
