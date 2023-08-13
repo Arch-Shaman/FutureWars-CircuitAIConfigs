@@ -76,7 +76,8 @@
 					{"unit": "staticshield", "category": "defence", "offset": [-10, -10]},
 					{"unit": "turretheavy", "category": "defence", "offset": [-10, -10]},
 					{"unit": "turretaafar", "category": "defence", "offset": {"front": 120}},
-					{"unit": "turretaaflak", "category": "defence", "offset": {"front": 120}}
+					{"unit": "turretaaflak", "category": "defence", "offset": {"front": 120}},
+					{"unit": "staticheavyshield", "category": "defence", "offset": {"front": 150}}
 				],
 				[  // chain2
 					{"unit": "turretlaser", "category": "defence", "offset": [80, 80]},
@@ -87,7 +88,27 @@
 					{"unit": "staticshield", "category": "defence", "offset": [-10, -10]},
 					{"unit": "turretheavy", "category": "defence", "offset": [-10, -10]},
 					{"unit": "turretaaflak", "category": "defence", "offset": {"front": 120}, "condition": "air"},
-					{"unit": "turretaaflak", "category": "defence", "offset": {"front": 120}, "condition": "no_air"}
+					{"unit": "turretaaflak", "category": "defence", "offset": {"front": 120}, "condition": "no_air"},
+					{"unit": "staticheavyshield", "category": "defence", "offset": {"front": 150}}
+				],
+				[
+					{"unit": "staticshield", "category": "defence", "offset": [-10, -10]},
+					{"unit": "staticshield", "category": "defence", "offset": [10, -10]},
+					{"unit": "turretdecloak", "category": "defence", "offset": [-70, 70]},
+					{"unit": "turretheavy", "category": "defence", "offset": [-80, 80]},
+					{"unit": "staticshield", "category": "defence", "offset": [10, 10]},
+					{"unit": "staticshield", "category": "defence", "offset": [-10, 10]},
+					{"unit": "staticshield", "category": "defence", "offset": [-30, -30]},
+					{"unit": "staticshield", "category": "defence", "offset": [30, -30]},
+					{"unit": "staticshield", "category": "defence", "offset": [30, 30]},
+					{"unit": "staticshield", "category": "defence", "offset": [-30, 30]},
+					{"unit": "turretaaflak", "category": "defence", "offset": {"front": 120}, "condition": "air"},
+					{"unit": "turretaaflak", "category": "defence", "offset": {"front": 60}, "condition": "no_air"},
+					{"unit": "turretheavy", "category": "defence", "offset": [80, 80]},
+					{"unit": "staticheavyarty", "category": "defence", "offset": [120, 30]},
+					{"unit": "staticheavyarty", "category": "defence", "offset": [120, 90]},
+					{"unit": "staticheavyarty", "category": "defence", "offset": [120, 120]},
+					{"unit": "staticheavyshield", "category": "defence", "offset": {"front": 150}}
 				]
 			]
 		},
