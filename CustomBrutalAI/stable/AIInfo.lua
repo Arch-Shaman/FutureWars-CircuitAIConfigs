@@ -16,7 +16,7 @@
 local infos = {
 	{
 		key    = 'shortName',
-		value  = 'FWBrutal64', -- AI name - !This comment is used for parsing!
+		value  = 'CustomBrutalAI', -- AI name - !This comment is used for parsing!
 		desc   = 'machine conform name.',
 	},
 	{
@@ -25,7 +25,7 @@ local infos = {
 	},
 	{
 		key    = 'name',
-		value  = 'FW Circuit Brutal',
+		value  = 'Custom Circuit Brutal AI',
 		desc   = 'human readable name.',
 	},
 	{
