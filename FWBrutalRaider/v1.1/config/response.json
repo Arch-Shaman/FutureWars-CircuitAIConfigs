@@ -15,15 +15,15 @@
 		"max_percent": 1.00
 	},
 	"skirmish": {
-		"vs":         ["riot", "static", "assault", "commander", "heavy", "anti_heavy"],
-		"ratio":      [ 1.50,   0.75,     1.00,      0.00,        0.00,    0.00],
-		"importance": [ 35.00,  25.00,    25.00,     75.00,       0.00,    0.00],
+		"vs":         ["riot", "static", "assault", "commander", "heavy", "anti_heavy", "missileskirm"],
+		"ratio":      [ 1.50,   0.75,     1.00,      0.00,        0.00,    0.00,          2.00],
+		"importance": [ 35.00,  25.00,    25.00,     75.00,       0.00,    0.00,         35.00],
 		"max_percent": 1.00
 	},
 	"raider": {
-		"vs":         ["anti_air", "scout", "raider", "anti_heavy", "mine", "skirmish", "artillery"],
-		"ratio":      [ 0.00,       1.00,    1.0,      0.10,         0.35,   0.40,       0.8],
-		"importance": [ 15.00,      75.00,   75.00,    15.00,        60.00,  45.00,      10.00],
+		"vs":         ["anti_air", "scout", "raider", "anti_heavy", "mine", "skirmish", "artillery", "missileskirm"],
+		"ratio":      [ 0.00,       1.00,    1.0,      0.10,         0.35,   0.40,       0.8,            0.0],
+		"importance": [ 15.00,      75.00,   75.00,    15.00,        60.00,  45.00,      10.00,         100.0],
 		"max_percent": 1.00,
 		"eps_step": 0.75
 	},
@@ -56,9 +56,9 @@
 		"eps_step": 0.025
 	},
 	"artillery": {
-		"vs":         ["static", "artillery", "super", "shieldball", "turtle"],
-		"ratio":      [ 0.66,     0.00,        0.66,    0.25,         3.0],
-		"importance": [ 20.00,    0.00,        40.00,   40.00,        40.0],
+		"vs":         ["static", "artillery", "super", "shieldball", "turtle", "missileskirm"],
+		"ratio":      [ 0.66,     0.00,        0.66,    0.25,         3.0,         2.00],
+		"importance": [ 20.00,    0.00,        40.00,   40.00,        40.0,       100.0],
 		"max_percent": 0.66,
 		"eps_step": 0.02
 	},
