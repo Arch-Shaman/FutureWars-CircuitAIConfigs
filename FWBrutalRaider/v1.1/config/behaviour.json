@@ -98,10 +98,10 @@
 		"retreat": 0.01
 	},
 	"cloakskirm": {
-		"role": ["skirmish"],
+		"role": ["skirmish", "missileskirm"],
 		"attribute": ["siege", "ret_fight"],
-		"pwr_mod": 0.85,
-		"since": 30,
+		"pwr_mod": 0.25,
+		"thr_mod": 0.2,
 		"retreat": 0.65  // mostly disposable
 	},
 	"cloakriot": {
@@ -114,16 +114,14 @@
 	},
 	"cloakassault": {
 		"role": ["assault", "anti_sub"],
-		"attribute": ["melee"],
+		"attribute": ["siege"],
 		"retreat": 0.35,  // assaults need to assault
-		"since": 240,
 		"pwr_mod": 0.7,
 		"thr_mod": 1.1
 	},
 	"cloakarty": {
 		"role": ["artillery"],
-		"since": 550,
-		"limit": 8,
+		"attribute": ["siege"],
 		"retreat": 0.9,
 		"thr_mod": 0.0
 	},
@@ -373,7 +371,6 @@
 	},
 	"shieldskirm": {
 		"role": ["skirmish", "shieldball"],
-		"since": 100,
 		"pwr_mod": 0.7,
 		"thr_mod": 0.66,
 		"retreat": 0.3
@@ -382,21 +379,18 @@
 		"role": ["assault", "support", "shieldball"],
 		"attribute": ["siege"],
 		"retreat": 0.3,
-		"since": 120,
 		"pwr_mod": 0.7,
 		"thr_mod": 0.35
 	},
 	"shieldriot": {
 		"role": ["riot", "shieldball"],
 		"fire_state": "hold",
-		"since": 100,
 		"retreat": 0.6,
 		"pwr_mod": 1.7,
 		"thr_mod": 1.7
 	},
 	"shieldfelon": {
 		"role": ["heavy", "shieldball", "snipe_target"],
-		"since": 420,
 		"retreat": 0.45,
 		"pwr_mod": 2.5,
 		"thr_mod": 1.5
@@ -411,7 +405,7 @@
 	"shieldbomb": {
 		"role": ["riot", "mine"],
 		"attribute": ["melee"],
-		"pwr_mod" : 99.0,
+		"pwr_mod" : 999.0,
 		"retreat": 0.0,
 		"thr_mod" : 10
 	},
@@ -450,7 +444,7 @@
 		"thr_mod": 0.8
 	},
 	"vehsupport": {
-		"role": ["artillery", "missileskirm"],
+		"role": ["artillery", "skirmish"],
 		"attribute": ["siege", "ret_fight"],
 		"pwr_mod": 1.0,
 		"thr_mod": 0.4,
