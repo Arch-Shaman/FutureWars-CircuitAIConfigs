@@ -84,14 +84,14 @@
 	},
 	"cloakraid": {
 		"role": ["raider", "raider"],
-		"attribute": ["scout"],
+		"attribute": ["melee", "scout"],
 		"retreat": 0.4,
 		"pwr_mod": 0.9,
 		"thr_mod": 0.75
 	},
 	"cloakheavyraid": {
 		"role": ["cloaked_raider", "raider"],
-		"attribute": ["ret_fight"],
+		"attribute": ["ret_fight", "melee"],
 		"since": 180,
 		"pwr_mod": 1.0,
 		"thr_mod": 0.1,

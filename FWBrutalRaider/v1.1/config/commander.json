@@ -6,41 +6,41 @@
 		"unit": {
 			"support": {
 				// Choice importance, 0 by default
-				"importance": 2,
+				"importance": 3,
 
 				// Starting units (order matters)
 				"start": {
 					"factory": {
 						"factorycloak": [
 							// [<weight>, [<role>, <role>, ...]]
-							[0.4, ["raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider"]],
-							[0.3, ["skirmish", "skirmish", "builder", "skirmish", "skirmish", "skirmish", "skirmish", "skirmish", "skirmish", "skirmish", "skirmish"]],
-							[0.3, ["assault", "assault", "assault", "assault", "assault", "builder"]]
+							[0.4, ["builder", "builder", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider", "raider"]],
+							[0.3, ["builder", "skirmish", "skirmish", "builder", "skirmish", "skirmish", "builder", "builder", "skirmish", "skirmish", "skirmish", "skirmish", "skirmish", "skirmish"]],
+							[0.3, ["builder", "builder", "assault", "assault", "assault", "assault", "assault"]]
 						],
 						"factorygunship": [
-							[0.2, ["builder"]],
-							[0.8, ["scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "builder"]]
+							[0.8, ["builder", "builder", "builder", "raider", "raider", "raider"]],
+							[0.8, ["builder", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "builder"]]
 						],
 						"factoryamph": [
-							[0.95, ["raider", "raider", "raider", "raider"]],
-							[0.05, ["assault", "assault"]]
+							[0.95, ["builder", "builder", "raider", "raider", "raider", "raider"]],
+							[0.05, ["builder", "builder", "assault"]]
 						],
 						"factoryveh": [
-							[0.8, ["raider", "raider", "raider", "raider", "raider", "raider", "scout"]],
+							[0.8, ["builder", "builder", "raider", "raider", "raider", "raider", "raider", "raider", "scout"]],
 							[0.2, ["builder", "scout", "scout", "scout"]]
 						],
 						"factoryhover": [
-							[0.9, ["skirmish", "raider", "builder", "builder", "raider"]],
-							[0.1, ["raider", "raider", "scout",  "skirmish", "builder", "skirmish", "scout"]]
+							[0.9, ["builder", "builder", "skirmish", "raider", "builder", "builder", "raider"]],
+							[0.1, ["builder", "builder", "raider", "raider", "scout",  "skirmish", "builder", "skirmish", "scout"]]
 						],
 						"factoryplane": [
 							[0.7, ["builder", "builder"]],
 							[0.3, ["builder", "riot", "builder"]]
 						],
 						"factorytank": [
-							[0.2, ["raider", "raider", "raider", "builder"]],
-							[0.2, ["skirmish", "riot", "builder", "riot"]],
-							[0.2, ["assault", "builder", "assault", "assault", "assault", "assault", "assault"]],
+							[0.2, ["builder", "builder", "raider", "raider", "raider", "builder"]],
+							[0.2, ["builder", "skirmish", "riot", "builder", "riot"]],
+							[0.2, ["builder", "assault", "builder", "assault", "assault", "assault", "assault", "assault"]],
 							[0.1, ["builder", "builder", "builder", "builder"]],
 							[0.1, ["heavy"]]
 						],
@@ -59,8 +59,9 @@
 							[0.5, ["builder", "scout", "scout", "scout", "scout", "scout", "scout", "scout", "scout"]]
 						],
 						"factoryjump": [
-							[0.8, ["assault", "assault", "builder", "builder","builder", "builder"]],
-							[0.1, ["antiheavy"]],
+							[0.4, ["builder", "builder", "raider", "raider", "raider", "raider"]],
+							[0.4, ["builder", "builder", "raider", "assault", "assault"]],
+							[0.1, ["builder", "builder", "antiheavy"]],
 							[0.1, ["builder", "builder", "builder"]]
 						]
 					},
@@ -291,7 +292,7 @@
 			},
 			"strike": {
 			   // Choice importance, 0 by default
-				"importance": 0.6,
+				"importance": 0,
 
 				// Starting units (order matters)
 				"start": {
