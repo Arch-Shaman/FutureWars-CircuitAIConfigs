@@ -1,0 +1,92 @@
+// Mono-space font required
+{
+"economy": {
+	// Plain list of energy UnitDef and its limit. AI sorts list by efficiency (inverse)
+	// which is = cost * sizeX * sizeZ / make^2
+	// With ZK v1.8.5.2:
+	//   energysingu = 15.486420
+	//   energygeo = 65.306122
+	//   energyfusion = 80.000000
+	//   energywind = 874.999939
+	//   energysolar = 1750.000000
+	// When e-stalling AI will build bottom-most energy that didn't reach its limit.
+	// On normal AI will select top-most energy that it can build under 40 seconds.
+	"energy": {
+		// If land area >= 40% of the map then "land" config used, "water" otherwise
+		"land": {
+			// "<energy_def>": [<lower limit>, <upper limit>]
+			// limit = random(<lower limit>..<upper limit>)
+			"energyprosperity": [2],
+			"energygeo": [1, 2],
+			"energysingu": [10],
+			"energyfusion": [6, 10],
+			"energysolar": [10],
+			"energywind": [8, 12],
+			"staticenergyrtg": [2, 2]
+		},
+		"water": {
+			"energysingu": [1],
+			"energygeo": [1, 2],
+			"energyfusion": [4],
+			"energywind": [20],
+			"energysolar": [8, 12]
+		},
+		// income factor for energy, time is in seconds
+		// [[<start_factor>, <start_time>], [<end_factor>, <end_time>]]
+		"factor": [
+            [0.001,  1],    [0.0011, 300],
+            [0.0011, 240],  [0.2,    500],
+            [0.3,    501],  [0.6,    1200],
+            [0.4,    1201], [0.8,    1580],
+            [0.8,    1581], [0.9,    1820],
+            [0.9,    1581], [0.95,   6000]
+        ],
+
+		"pylon": ["energypylon", "energysolar", "energywind", "energyfusion", "energysingu", "staticenergyrtg"]
+	},
+
+	// Scales metal income
+	// ecoFactor = teamSize*eps_step+(1-eps_step)
+    // IDK
+	"eps_step": 0.5,
+
+	// Mobile buildpower to metal income ratio
+	"buildpower": 1,
+	// Metal excess to income ratio, -1 to disable
+	"excess": -1.0,
+	// Mobile constructor to static constructor metal pull ratio
+	// [[<value>, <start_mex_percent>], [<value>, <end_mex_percent>]]
+//	"ms_pull": [[0.75, 0.0], [0.45, 0.10], [0.53, 0.25], [0.56, 0.40], [0.63, 0.44],[0.52, 0.48],[0.66, 0.52],[0.50, 0.56],[0.66, 0.60], [0.60, 0.65], [0.7, 0.66], [0.8, 0.66], [0.9, 0.75], [0.99, 0.90]],
+	"ms_pull": [
+        [0.70, 0.00], [0.5, 0.10],
+        [0.70, 0.11], [0.4, 0.35],
+        [0.5,  0.36], [0.9, 0.40],
+        [0.9,  0.41], [0.5, 0.45],
+        [0.5,  0.46], [0.9, 0.51],
+        [0.9,  0.55], [0.5, 0.60],
+        [0.5,  0.61], [0.9, 0.65],
+        [0.9,  0.66], [0.5, 0.70],
+        [0.5,  0.71], [1.0, 0.75],
+        [1.0,  0.76], [0.5, 0.80],
+        [0.5,  0.81], [1.0, 0.85],
+        [1.0,  0.86], [0.5, 0.90],
+        [0.5,  0.95], [1.0, 0.96]
+    ],
+	// Max percent of mexes circuit team allowed to take.
+	// If its <1.0 then expansion obeys ms_pull rule, if >=1.0 then ms_pull doesn't affect expansion (mex, pylon, energy).
+	"mex_max": [1400.0, true],  // 200%
+	// Construction order delay in seconds, -1 to disable
+	"build_delay": [[-1.0, 0], [-1.0, 0]],
+
+	// New factory switch interval, in seconds (each new factory resets timer, switch event is also based on eco + caretakers)
+	// switch = random(<min_interval>..<max_interval>)
+	"switch": [290, 330],
+
+	"terra": "terraunit",
+	"airpad": "staticrearm",
+
+	// Unknown UnitDef replacer
+	"default": "turretmissile"
+}
+}
+// !hostsay /setminspeed 10
