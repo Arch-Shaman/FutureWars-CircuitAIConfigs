@@ -362,7 +362,7 @@
 		"unit":      ["striderantiheavy", "striderscorpion", "striderdante", "striderarty", "striderfunnelweb", "striderbantha", "striderdetriment", "subtacmissile", "striderrazorback", "nebula"],
 		"land": {
 			"tier0": [ 0.10,               0.00,              0.00,           0.00,          0.70,               0.00,            0.00,               0.00,            0.00,                0.10],
-			"tier1": [ 0.20,               0.00,              0.00,           0.10,          0.40,               0.05,            0.00,               0.00,            0.00,                0.25],
+			"tier1": [ 0.10,               0.00,              0.00,           0.10,          0.60,               0.05,            0.00,               0.00,            0.00,                0.15],
 			"tier2": [ 0.20,               0.00,              0.00,           0.10,          0.20,               0.25,            0.10,               0.00,            0.00,                0.15],
 			"tier3": [ 0.33,               0.00,              0.00,           0.00,          0.00,               0.00,            0.33,               0.00,            0.00,                0.33]
 		},

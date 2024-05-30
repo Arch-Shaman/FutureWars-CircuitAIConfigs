@@ -29,7 +29,7 @@
 "defence": {
 	"infl_rad": 30,  // influenece cell radius for defendAlly map
 	"base_rad": [3000.0, 4000.0],  // defend if enemy within clamp(distance(lane_pos, base_pos), 1000, 2000) radius
-	"comm_rad": [4000.0, 4000.0]  // 0 distance from base ~ 1000, base_rad ~ 500.0
+	"comm_rad": [1500.0, 1500.0]  // 0 distance from base ~ 1000, base_rad ~ 500.0
 },
 
 
@@ -518,25 +518,25 @@
 	},
 	"jumpblackhole": {
 		"role": ["support"],
-		"attribute": ["siege"],
+		"attribute": ["siege", "jump"],
 		"since": 300,
 		"limit": 6,
 		"retreat": 0.36
 	},
 	"jumpskirm": {
 		"role": ["skirmish", "super", "snipe_target"],
+		"attribute": ["siege"],
 		"retreat": 0.4
 	},
 	"jumpassault": {
 		"role": ["assault", "anti_sub", "disarm_target"],
-		"attribute": ["melee", "siege"],
+		"attribute": ["melee", "siege", "jump"],
 		"retreat": 0.4,
 		"pwr_mod": 1.3,
 		"thr_mod": 0.5
 	},
 	"jumpsumo": {
 		"role": ["heavy", "support", "disarm_target"],
-		"limit": 0,
 		"attribute": ["melee", "no_jump"]  // jump on attack
 	},
 	"jumparty": {
@@ -545,7 +545,8 @@
 		"since": 600,
 		"pwr_mod": 0.1,
 		"thr_mod": 0.00,
-		"retreat": 0.99
+		"retreat": 0.99,
+		"limit": 0 // too much risk for FF.
 	},
 	"jumpbomb": {
 		"role": ["anti_heavy", "mine"],
@@ -814,7 +815,8 @@
 		"retreat": 0.65,
 		"pwr_mod": 0.5,
 		"since": 300,
-		"thr_mod": 0.5
+		"thr_mod": 0.5,
+		"limit": 0
 	},
 	"striderdante": {
 		"role": ["heavy", "disarm_target", "snipe_target"],
@@ -834,20 +836,20 @@
 		"attribute": ["support", "siege"],
 		"retreat": 1.4,
 		"pwr_mod": 1.0,
-		"limit": 1,
-		"since": 3000,
+		"since": 450,
 		"thr_mod": 0.0
 	},
 	"striderbantha": {
 		"role": ["artillery", "support", "heavy"],
 		"retreat": 0.6,
 		"pwr_mod": 0.5,
-		"thr_mod": 0.5
+		"thr_mod": 0.5,
+		"since": 600,
 	},
 	"striderdetriment": {
 		"role": ["heavy", "support", "heavy"],
 		"attribute": ["siege"],
-		"retreat": 0.50,  // deffo retreat, running into nab annihlator farm and sploding is silly :)
+		"retreat": 0.01,  // No SOSes, No Maydays, NO RETREAT.
 		"pwr_mod": 3.0,
 		"thr_mod": 0.34
 	},
